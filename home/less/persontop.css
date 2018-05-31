@@ -1,0 +1,135 @@
+body {
+  background: #f8f8f8;
+  width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+* {
+  -webkit-touch-callout: none;
+  border-width: thin;
+}
+body,
+p {
+  margin: 0;
+}
+div,
+a,
+span {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select {
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+  color: #bcbcbc;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+html {
+  font-size: 20px;
+  background: #FFFFFF;
+}
+body {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100% !important;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+button {
+  border: none;
+  outline: none;
+}
+body {
+  background: #ffffff;
+}
+.jump {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  height: 14rem;
+  position: relative;
+  background: linear-gradient(180deg, #2ad7c8, #25c198);
+}
+.jump .back {
+  height: 2.2rem;
+  margin-bottom: 5px;
+  width: 3rem;
+  display: block;
+  text-align: left;
+  padding-left: .75rem;
+}
+.circle {
+  margin-bottom: 1rem;
+  width: 100%;
+  transform: scale(0.5, 0.5);
+  transform-origin: top;
+}
+.tab_nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #EEEEEE;
+}
+.tab_nav_item {
+  font-size: .8rem;
+  padding: 1rem 0 .45rem 0;
+  color: #999999;
+  border-bottom: 2px solid #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-align: center;
+}
+.tab_nav_item.active {
+  color: #59CCAD;
+  font-weight: bold;
+  border-bottom: 2px solid #59CCAD;
+}
+.tab_list {
+  padding: .75rem;
+}
+.tab_list_item {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tab_list_item > div {
+  width: calc(50% - 2.5px);
+  height: 4rem;
+  padding-top: 1rem;
+  margin-bottom: 5px;
+  background: #F8F8F8;
+}
+.tab_list_item > div b {
+  font-size: .8rem;
+}
+.tab_list_item > div p {
+  margin-top: .75rem;
+  font-size: .6rem;
+}

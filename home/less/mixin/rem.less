@@ -1,0 +1,42 @@
+//375屏幕为 20px，以此为基础计算出每一种宽度的字体大小
+//375以下不变，375以上等比放大
+
+@baseWidth: 375px;
+@baseFont: 20px;
+
+html {
+  font-size: @baseFont;
+  background: #FFFFFF;
+}
+
+body {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+@bps: 400px, 414px, 480px;
+
+.loop(@i: 1) when (@i <= length(@bps)) {
+  @bp: extract(@bps, @i);
+  @font: @bp/@baseWidth*@baseFont;
+  @media only screen and (min-width: @bp) {
+    html {
+      font-size: @font !important;
+    }
+  }
+  .loop((@i + 1));
+}
+
+.loop;
+
+button {
+  border: none;
+  outline: none;
+}
+
+
+
+//
+//input::-webkit-search-cancel-button {
+//  display: none;
+//}

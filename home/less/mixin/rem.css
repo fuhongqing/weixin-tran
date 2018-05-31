@@ -1,0 +1,27 @@
+html {
+  font-size: 20px;
+  background: #FFFFFF;
+}
+body {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100% !important;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+button {
+  border: none;
+  outline: none;
+}

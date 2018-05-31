@@ -1,0 +1,14 @@
+
+
+.houseType{padding:0 0.6rem;background: #fff;}
+.houseTypePic{height:10rem;}
+.houseTypePic img{height:100%;width:100%;}
+.houseTypeA{font-size:18px;line-height: 2.5em;padding-bottom: 2rem;}
+.houseTit{ color:#16C584;font-size:18px;height: 2.5em;line-height: 2.5em;}
+
+.houseMoney b{color:#333;}
+#houseSale{font-size:16px;color:#ff5704;}
+.houseTypeA p{font-size:16px;line-height:1.4rem; color:#aaa;}
+.houseTypeA p span{color:#333;}
+.houseTypeA p span b{color: #16C584;}
+

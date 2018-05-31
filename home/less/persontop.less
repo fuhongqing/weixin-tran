@@ -1,0 +1,78 @@
+@import "mixin/reset";
+@import "mixin/rem";
+@import "mixin/flex";
+
+body {
+  background: #ffffff;
+}
+
+.jump {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  height: 14rem;
+  position: relative;
+  background: linear-gradient(180deg, rgba(42, 215, 200, 1), rgba(37, 193, 152, 1));
+  .back {
+    height: 2.2rem;
+    margin-bottom: 5px;
+    width: 3rem;
+    display: block;
+    text-align: left;
+    padding-left: .75rem;
+  }
+}
+
+.circle {
+  margin-bottom: 1rem;
+  width: 100%;
+  transform: scale(.5, .5);
+  transform-origin: top;
+}
+
+.tab_nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #EEEEEE;
+  &_item {
+    font-size: .8rem;
+    padding: 1rem 0 .45rem 0;
+    color: #999999;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+    &.active {
+      color: #59CCAD;
+      font-weight: bold;
+      border-bottom: 2px solid #59CCAD;
+    }
+  }
+
+}
+
+.tab_list {
+  padding: .75rem;
+}
+
+.tab_list_item {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > div {
+    width: calc(~"50% - 2.5px");
+    height: 4rem;
+    padding-top: 1rem;
+    margin-bottom: 5px;
+    background: #F8F8F8;
+    b {
+      font-size: .8rem;
+    }
+    p {
+      margin-top: .75rem;
+      font-size: .6rem;
+    }
+  }
+}

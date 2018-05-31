@@ -1,0 +1,264 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+.page{
+    position: relative;
+    display: none;
+}
+.page header>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+input::-webkit-input-placeholder{
+    color:#DDDDDD!important;
+    font-size: 16px;
+}
+.page input{
+    width: 100%;
+    padding: .2rem 0;
+    line-height:.9;
+    font-size: 16px;
+    border: none;
+    border-bottom: .01rem solid #EEEEEE;
+    outline: none;
+    -webkit-appearance: none;
+}
+input:focus{
+    outline: none;
+}
+.page section{
+    padding: .4rem .3rem 1.04rem .3rem;
+    background: #fff;
+}
+#title{
+    display: none;
+    line-height: .48rem;
+}
+/*手机号*/
+#pnm{
+    font-size: 14px;
+    color: #999999;
+    position: relative;
+}
+#pnm>button{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    bottom: .2rem;
+    display: none;
+}
+#pnm>img{
+    position: absolute;
+    right: 1.1rem;
+    bottom: .2rem;
+    display: none;
+}
+/*登录按钮*/
+.btn{
+    width: 100%;
+    height: .46rem;
+    background: #48CFAD;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: .46rem;
+}
+/*模态框*/
+.modal,.jobModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background: rgba(0,0,0,.5);
+}
+/*提示框*/
+.toast {
+    min-width: .4rem;
+    min-height: .4rem;
+    padding: .1rem .1rem;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, .8);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 20;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/*选择弹框*/
+.topDiv{
+    min-height: 3.09rem;
+    background: #fff;
+    color: #333333;
+    position: absolute;
+    z-index: 20;
+    bottom:0;
+    width: 100%;
+}
+.topDiv>li{
+    border-bottom: .01rem solid #EEEEEE;
+    height: .46rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-left:.16rem;
+    padding-right: .16rem;
+}
+.topDiv>li:first-child{
+    justify-content: center;
+    height: .51rem;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: .16rem;
+    margin: 0;
+}
+.liActive{
+    color:#59CCAD;
+}
+.topDiv img{
+    display: none;
+}
+/*pageNext*/
+a{
+    text-decoration: none;
+}
+.page_next{
+    display: none;
+}
+.page_next img{
+    vertical-align: middle;
+}
+/*带返回的头部*/
+.backHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .48rem;
+    font-size: 17px;
+    border-bottom: .01rem solid #DDDDDD;
+    color: #333333;
+    font-weight: bold;
+}
+.backHead>.back{
+    width: .5rem;
+    height: .48rem;
+    line-height: .48rem;
+    padding-left: .15rem;
+    position: absolute;
+}
+#ignore{
+    visibility: hidden;
+    position: absolute;
+    right: .15rem;
+}
+.backHead>.center{
+    flex: 1;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+.page_next section{
+    padding: .15rem;
+}
+.page_next section .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#999999;
+    font-size: 16px;
+    margin-bottom: .2rem;
+}
+.page_next section>.row{
+    display: none;
+    margin-top: .05rem;
+}
+/*分行码输入框*/
+#branchCode{
+    width: 2.67rem;
+}
+/*添加认证公司*/
+#addAgent{
+    display: none;
+    text-align: right;
+    margin-bottom: .4rem;
+    margin-top: .3rem;
+    color: #666666;
+}
+.page_next section input{
+    border:.01rem solid #DDDDDD;
+    width: 2.27rem;
+    padding: .08rem;
+    line-height:.9;
+    outline: none;
+    -webkit-appearance: none;
+    font-size: 16px;
+}
+.page_next input:focus{
+    outline: none;
+}
+#myJob{
+    width: 2.26rem;
+    height: .32rem;
+    border:1px solid #DDDDDD;
+    font-size: 16px;
+    color:#DEDEDE;
+    padding: .08rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page_next footer{
+    display: none;
+    color: #999999;
+    margin-top: 2.4rem;
+    font-size: 14px;
+    padding: 0 .15rem;
+}
+.page_next footer>p{
+    margin-bottom: .15rem;
+}
+.page_next footer>p:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+.page_next footer a{
+    color: #569785;
+}
+/*文字字体大小是不要换算成rem做单位的，而是使用媒体查询来进行动态设置*/
+@media screen and (max-width: 321px) {
+    body {
+        font-size:13px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+    body {
+        font-size:14px;
+    }
+}
+
+@media screen and (min-width: 400px){
+    body {
+        font-size: 16px;
+    }
+}

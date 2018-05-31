@@ -1,0 +1,64 @@
+.flexbox() {
+  display: flex;
+  .col(@n,@all) {
+    .col-@{n}-@{all} {
+      width: percentage(@n/@all);
+    }
+  }
+}
+
+.flexbox-inline() {
+  display: inline-flex;
+}
+
+.flex-wrap(@fw) when (@fw = nowrap) {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap(@fw) when (@fw = wrap) {
+  flex-wrap: wrap;
+}
+
+.flex-wrap(@fw) when not (@fw = wrap) and not (@fw = nowrap) {
+  flex-wrap: @fw;
+}
+
+.flex-shrink(@fs) {
+  flex-shrink: @fs;
+}
+
+.justify-content(@jc) when (@jc = flex-start) {
+  justify-content: flex-start;
+}
+
+.justify-content(@jc) when (@jc = flex-end) {
+  justify-content: flex-end;
+}
+
+.justify-content(@jc) when (@jc = space-between) {
+  justify-content: space-between;
+}
+
+.justify-content(@jc) when not (@jc = flex-start) and not (@jc = flex-end) and not (@jc = space-between) {
+  justify-content: @jc;
+}
+
+.align-items(@ai) when (@ai = flex-start) {
+  align-items: flex-start;
+}
+
+.align-items(@ai) when (@ai = flex-end) {
+  align-items: flex-end;
+}
+
+.align-items(@ai) when not (@ai = flex-start) and not (@ai = flex-end) {
+  align-items: @ai;
+}
+
+.align-content(@ai) {
+  align-content: @ai;
+}
+
+.align-self(@as) {
+  align-self: @as;
+}
